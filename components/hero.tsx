@@ -1,4 +1,4 @@
-const focusAreas = ["Laravel", "PHP", "REST APIs", "MySQL", "ProcessMaker 4"];
+const focusAreas = ["Laravel", "PHP", "REST APIs", "MySQL", "ProcessMaker 4", "Docker", "Git", "Tailwind CSS", "Bootstrap"];
 
 export default function Hero() {
   return (
