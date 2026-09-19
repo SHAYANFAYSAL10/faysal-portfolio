@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import CustomCursor from "@/components/custom-cursor";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "S. M. Faysal Alam - Associate Software Engineer",
-  description: "Software Engineer specializing in Laravel, PHP, and modern web technologies.",
+  description:
+    "Software Engineer building secure, fast backends with PHP, Laravel and MySQL: multi-tenant SaaS, REST APIs, reporting tools and ProcessMaker 4 workflows.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -23,7 +25,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <CustomCursor />
+      </body>
     </html>
   );
 }
