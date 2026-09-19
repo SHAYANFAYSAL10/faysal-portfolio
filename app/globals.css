@@ -98,6 +98,93 @@ body {
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
 }
 
+/* Custom cursor: only shown once CustomCursor enables it on fine pointers. */
+.custom-cursor {
+  display: none;
+}
+
+.has-custom-cursor .custom-cursor {
+  display: block;
+}
+
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.cursor-dot > span,
+.cursor-ring > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.3s ease,
+    scale 0.15s ease;
+}
+
+.cursor-dot > span {
+  width: 8px;
+  height: 8px;
+  background: #64ffda;
+  box-shadow: 0 0 12px #64ffda;
+}
+
+.cursor-ring > span {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid #64ffda80;
+  animation: cursor-pulse 2.4s ease-in-out infinite;
+}
+
+[data-cursor-visible="false"] .custom-cursor > div > span {
+  opacity: 0;
+}
+
+[data-cursor-hover="true"] .cursor-ring > span {
+  width: 60px;
+  height: 60px;
+  border-color: #64ffda;
+  background-color: #64ffda14;
+  animation: none;
+}
+
+[data-cursor-hover="true"] .cursor-dot > span {
+  width: 4px;
+  height: 4px;
+}
+
+[data-cursor-down="true"] .cursor-ring > span {
+  scale: 0.75;
+}
+
+[data-cursor-down="true"] .cursor-dot > span {
+  scale: 1.6;
+}
+
+@keyframes cursor-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 #64ffda33;
+  }
+  50% {
+    box-shadow: 0 0 0 6px #64ffda00;
+  }
+}
+
 /* Scroll reveal: elements start hidden only when JS can reveal them. */
 @media (scripting: enabled) {
   .reveal {
