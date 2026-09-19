@@ -7,6 +7,7 @@ const highlights = [
   { label: "APIs", value: "REST · Laravel Passport · Validation" },
   { label: "Data", value: "MySQL · SQL Server" },
   { label: "Workflow", value: "ProcessMaker 4 · BPMN" },
+  { label: "Tools", value: "Docker · Git" },
 ];
 
 export default function About() {
@@ -30,7 +31,8 @@ export default function About() {
               secured APIs with Laravel Passport, extended ProcessMaker 4 BPMN
               workflows, and shipped reporting tools that export large datasets
               to Excel through queues without timeouts. I enjoy finding slow
-              queries and N+1 problems and making things faster.
+              queries and N+1 problems and making things faster. Day to day I
+              work with Git and Docker.
             </p>
 
             <p>
@@ -41,14 +43,14 @@ export default function About() {
             </p>
           </Reveal>
 
-          <div className="grid content-start gap-4">
+          <div className="grid auto-rows-fr gap-3">
             {highlights.map((item, i) => (
-              <Reveal key={item.label} delay={i * 100}>
-                <div className="group rounded-xl border border-navy-700 bg-navy-800/50 p-5 transition duration-300 hover:-translate-y-1 hover:border-accent/50 hover:bg-navy-800">
+              <Reveal key={item.label} delay={i * 100} className="h-full">
+                <div className="group flex h-full flex-col justify-center rounded-xl border border-navy-700 bg-navy-800/50 px-5 py-3.5 transition duration-300 hover:-translate-y-1 hover:border-accent/50 hover:bg-navy-800">
                   <p className="font-mono text-xs tracking-widest text-accent">
                     {item.label.toUpperCase()}
                   </p>
-                  <p className="mt-2 text-slate-200">{item.value}</p>
+                  <p className="mt-1 text-slate-200">{item.value}</p>
                 </div>
               </Reveal>
             ))}
