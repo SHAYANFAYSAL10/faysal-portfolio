@@ -33,7 +33,7 @@ export default function Contact() {
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
                 <a
-                  href="mailto:YOUR_EMAIL_HERE"
+                  href="mailto:faysalshayan9@gmail.com"
                   className="rounded-md bg-accent px-8 py-3.5 text-sm font-semibold text-navy-900 shadow-lg shadow-accent/20 transition hover:-translate-y-0.5 hover:shadow-accent/40"
                 >
                   Say Hello

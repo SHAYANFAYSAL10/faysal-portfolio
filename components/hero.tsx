@@ -27,8 +27,10 @@ export default function Hero() {
         </h2>
 
         <p className="mt-6 max-w-2xl animate-fade-up text-base leading-7 text-slate-400 [animation-delay:400ms] sm:text-lg">
-          Software Engineer focused on Laravel, PHP, REST APIs, databases,
-          workflow automation, and performance optimization.
+          Software Engineer with nearly 2 years of experience building secure,
+          fast backends in PHP, Laravel and MySQL, from multi-tenant SaaS
+          platforms and REST APIs to reporting tools and ProcessMaker 4
+          workflows.
         </p>
 
         <ul className="mt-8 flex animate-fade-up flex-wrap gap-2 [animation-delay:500ms]">

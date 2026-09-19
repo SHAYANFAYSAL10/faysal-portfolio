@@ -6,49 +6,63 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "PMP / Partner Portal",
-    description:
-      "Contributed to an enterprise partner portal by developing backend functionality, REST APIs, database operations, business logic, validation, and dynamic user interfaces.",
-    technologies: [
-      "Laravel",
-      "PHP",
-      "MySQL",
-      "REST API",
-      "ProcessMaker",
-      "Tailwind CSS",
-    ],
-  },
-
-  {
-    title: "Workflow / E-Approval System",
-    description:
-      "Worked on workflow automation and electronic approval processes using ProcessMaker 4 and BPMN, including custom workflow actions, integrations, business logic, and backend services.",
-    technologies: [
-      "Laravel",
-      "PHP",
-      "ProcessMaker 4",
-      "BPMN",
-      "MySQL",
-      "REST API",
-    ],
-  },
-
-  {
     title: "SecureBoard",
     description:
-      "Contributed to a board and meeting management platform inspired by BoardPAC, working on backend functionality, APIs, database operations, business logic, and application features.",
+      "A multi-tenant SaaS platform for board and meeting management, built on stancl/tenancy. Developed secure REST APIs with Laravel Passport token authentication and permission checks, encrypted file storage with role-based downloads, and lean API responses that keep sensitive data out.",
     technologies: [
-      "PHP",
       "Laravel",
+      "PHP",
+      "stancl/tenancy",
+      "Laravel Passport",
       "MySQL",
       "REST API",
+    ],
+  },
+
+  {
+    title: "PMP / Partner Portal",
+    description:
+      "Full-stack work on an enterprise partner portal: REST APIs, business logic, validation, authentication and authorization in Laravel, plus data-driven pages built with Tailwind CSS, Bootstrap and JavaScript.",
+    technologies: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "REST API",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+  },
+
+  {
+    title: "Workflow Automation",
+    description:
+      "Extended a ProcessMaker 4 BPMN workflow engine to handle complex business rules and connect multiple systems. Built custom workflow actions that cut manual work, and tuned queries and queue processing so workflows run faster.",
+    technologies: [
+      "ProcessMaker 4",
+      "BPMN",
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Laravel Queues",
+    ],
+  },
+
+  {
+    title: "Reporting & Excel Export System",
+    description:
+      "A reporting module with advanced filters and search for operations teams. Exports large datasets to formatted Excel files through Laravel Queues, with no timeouts or memory errors.",
+    technologies: [
+      "Laravel",
+      "PHP",
+      "Laravel Queues",
+      "MySQL",
     ],
   },
 
   {
     title: "AccessCon",
     description:
-      "Worked on an access and control management system, contributing to backend development, database operations, APIs, and business logic using CodeIgniter and SQL Server.",
+      "An access and control management system. Worked on backend features, database operations, APIs and business logic using CodeIgniter and SQL Server.",
     technologies: [
       "PHP",
       "CodeIgniter",

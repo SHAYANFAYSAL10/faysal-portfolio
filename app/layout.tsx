@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "S. M. Faysal Alam - Associate Software Engineer",
-  description: "Software Engineer specializing in Laravel, PHP, and modern web technologies.",
+  description:
+    "Software Engineer building secure, fast backends with PHP, Laravel and MySQL: multi-tenant SaaS, REST APIs, reporting tools and ProcessMaker 4 workflows.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

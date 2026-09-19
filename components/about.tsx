@@ -3,9 +3,10 @@ import SectionHeading from "@/components/section-heading";
 
 const highlights = [
   { label: "Backend", value: "PHP · Laravel · CodeIgniter" },
+  { label: "SaaS", value: "Multi-tenancy · stancl/tenancy" },
+  { label: "APIs", value: "REST · Laravel Passport · Validation" },
   { label: "Data", value: "MySQL · SQL Server" },
   { label: "Workflow", value: "ProcessMaker 4 · BPMN" },
-  { label: "APIs", value: "REST · Auth · Validation" },
 ];
 
 export default function About() {
@@ -17,24 +18,26 @@ export default function About() {
         <div className="grid gap-12 md:grid-cols-[3fr_2fr]">
           <Reveal className="space-y-5 text-base leading-8 text-slate-400 sm:text-lg">
             <p>
-              I&apos;m a Software Engineer focused on building{" "}
-              <span className="text-accent">reliable and scalable</span> web
-              applications. My primary experience is with PHP, Laravel, MySQL,
-              REST APIs, and ProcessMaker 4.
+              I&apos;m a Software Engineer at Reddot Digital IT with nearly two
+              years of experience building{" "}
+              <span className="text-accent">secure, fast backends</span> in
+              PHP, Laravel and MySQL. I graduated in Computer Science and
+              Engineering from RUET.
             </p>
 
             <p>
-              I enjoy solving backend problems, improving application
-              performance, and building systems that can handle complex
-              business requirements. My experience includes workflow
-              automation, reporting systems, secure APIs, and large-scale
-              Excel exports.
+              I&apos;ve built a multi-tenant SaaS platform with stancl/tenancy,
+              secured APIs with Laravel Passport, extended ProcessMaker 4 BPMN
+              workflows, and shipped reporting tools that export large datasets
+              to Excel through queues without timeouts. I enjoy finding slow
+              queries and N+1 problems and making things faster.
             </p>
 
             <p>
-              I also have a strong foundation in data structures and algorithms,
-              with experience solving problems across multiple competitive
-              programming platforms.
+              Outside work I keep my problem-solving sharp: I&apos;ve solved{" "}
+              <span className="text-accent">385+ problems</span> across
+              Codeforces, LeetCode, VJudge and GeeksforGeeks, and competed in
+              40+ Codeforces contests.
             </p>
           </Reveal>
 
